@@ -1,0 +1,13 @@
+title: The case of the 500-mile email
+url: http://www.ibiblio.org/harris/500milemail.html
+archive_url: http://web.archive.org/web/20021220194409/http://www.ibiblio.org/harris/500milemail.html
+author: Trey Harris
+date: 2002-11-24
+symptom: |
+   Email failed to deliver to servers located further than 500 miles geographically from the sender.
+cause: |
+   Sendmail's default timeout value for remote connection is 0, which was practically equivalent to 3 ms -- i.e. roughly the time it takes to travel ~550 miles 
+
+contextthingies:
+      - name: Sendmail
+        version: 5
